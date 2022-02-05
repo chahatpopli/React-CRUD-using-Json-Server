@@ -10,35 +10,17 @@ import EditUser from "./components/EditUser"
 
 
 function App() {
-    return ( <
-        BrowserRouter >
-        <
-        Navbar / >
-        <
-        Routes >
-        <
-        Route path = "/"
-        element = { < Home / > }
-        />
-
-        <
-        Route path = "/all"
-        element = { < AllUsers / > }
-        /> <
-        Route path = "/add"
-        element = { < AddUser / > }
-        /> <
-        Route path = "/edit/:id"
-        element = { < EditUser / > }
-        /> <
-        Route path = "*"
-        element = { < NotFound / > }
-        />
-
-
-        <
-        /Routes> < /
-        BrowserRouter >
+    return ( 
+        <BrowserRouter >
+           <Navbar / >
+           <Routes >
+              <Route path = "/" element = { < Home / > } />
+              <Route path = "/all" element = { < AllUsers / > } /> 
+              <Route path = "/add" element = { < AddUser / > } /> 
+              <Route path = "/edit/:id" element = { < EditUser / > } /> 
+              <Route path = "*" element = { < NotFound / > } />
+           </Routes> 
+       < /BrowserRouter >
     );
 }
 
